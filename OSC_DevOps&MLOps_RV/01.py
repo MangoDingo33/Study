@@ -4,8 +4,8 @@ abb = {'취존': '취향 존중', '솔까말': '솔직히 까놓고 말해서', 
 point = 0
 
 for i in q:
-    a = input(f'{i}이(가) 어떤 문장의 줄임말인가요? : ')
-    if a == abb[i]:
+    a = input(f'{i}이(가) 어떤 문장의 줄임말인가요? : ').replace(' ', '')
+    if a == abb[i].replace(' ', ''):
         print('정답')
         point += 1
     else:
